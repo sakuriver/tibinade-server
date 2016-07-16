@@ -124,4 +124,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-ADMIN_SITE_TITLE = 'ƒ`ƒrƒiƒfƒT[ƒo[ ‚¿‚ã‚¤‚¨‚¤‚©‚ñ‚è‚µ‚Â'
+ADMIN_SITE_TITLE = 'ãƒãƒ“ãƒŠãƒ‡ã‚µãƒ¼ãƒãƒ¼  ã¡ã‚…ã†ãŠã†ã‹ã‚“ã‚Šã—ã¤'
