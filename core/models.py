@@ -23,3 +23,13 @@ class CharaMaster(models.Model):
     name = models.CharField('名前', max_length=255)
     bg_path = models.CharField('背景画像', max_length=255)
     
+
+class BallonMaster(models.Model):
+    """吹き出しの座標とか設定するマスタ.
+    """
+    class Meta:
+        verbose_name = '吹き出しマスタ'
+        verbose_name_plural = '吹き出しマスタ'
+    name = models.CharField('名称', max_length=255)
+    pos_x = models.IntegerField('X座標')
+    pos_y = models.IntegerField('Y座標')
