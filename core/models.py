@@ -33,3 +33,18 @@ class BallonMaster(models.Model):
     name = models.CharField('名称', max_length=255)
     pos_x = models.IntegerField('X座標')
     pos_y = models.IntegerField('Y座標')
+    
+class CharaPauseMaster(models.Model):
+    """キャラクターのポーズマスタ.
+    """
+    class Meta:
+        verbose_name = 'キャラポーズマスタ'
+        verbose_name_plural = 'キャラポーズマスタ'
+    chara_id = models.ForeignKey(CharaMaster)
+    release_goodfirend = models.IntegerField('解放される仲良し度')
+    serif_number = models.IntegerField('セリフ番号')
+    face_number = models.IntegerField('顔番号')
+    item_id = models.ForeignKey(CharaMaster)
+    pause_number = models.IntegerField('ポーズ番号')
+    ballon_id = models.IntegerField('吹き出し番号')
+    
