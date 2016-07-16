@@ -44,7 +44,7 @@ class CharaPauseMaster(models.Model):
     release_goodfirend = models.IntegerField('解放される仲良し度')
     serif_number = models.IntegerField('セリフ番号')
     face_number = models.IntegerField('顔番号')
-    item_id = models.ForeignKey(CharaMaster)
+    item_id = models.ForeignKey(ItemMaster)
     pause_number = models.IntegerField('ポーズ番号')
     ballon_id = models.IntegerField('吹き出し番号')
     
